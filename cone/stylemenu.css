@@ -1,0 +1,54 @@
+ .body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: skyblue,;
+        }
+
+        .gallery {
+            margin: 2em;
+        }
+
+        .filter {
+            display: flex;
+            gap: 25px;
+            margin-bottom: 1em;
+            justify-content: center; /* Center the filter buttons */
+        }
+
+        .filter-btn {
+            background-color: #aa2d2d;
+            color: white;
+            padding: 0.5em 1em;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .filtro-boton:hover {
+            background-color: #555;
+        }
+
+        .image-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px; /* Increased gap between images */
+            justify-content: center; /* Center the images */
+        }
+
+        .image {
+            width: 225px;
+            overflow: hidden;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        img {
+            height: 200px;
+            width: 200px;
+            display: block;
+            border-radius: 5px;
+            object-fit: cover;
+            margin: 10px;
+        }
