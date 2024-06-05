@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="stylemenu.css">
+    
+    <title>DANA'O</title>
+</head>
+
+<body>
+    <header class="page-header">
+        <div class="main-header px-1">
+            <div class="logo">
+                <h3>Hablale a mis tenis.</h3>
+            </div>
+            <nav>
+                <ul id="addClass">
+                    <li><a href="index.html">Principal</a></li>
+                    <li><a href="economicos.html">"Economicos"</a></li>
+                    <li><a href="sesion.html">Registrate</a></li>
+                </ul>
+                <div class="menu">
+                    <i class="bi bi-list"></i>
+                </div>
+                <div class="nav-icon">
+                    <div><i class="bi bi-search"></i></div>
+
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section class="section-1" style="background-image: url('');">
+        <div style="background: #000000e6;">
+            <div class="section-1-bg">
+            
+            </div>
+            <section id="gallery">
+                       
+                <div class="image-container">
+                    <div class="image nature">
+                        <a href="productos/producto 1.html"><img src="Jordan Jumpman Jack.png" alt="Jordan 1"></a>
+                        <a href="productos/producto 2.html"><img src="tenis Air Jordan 1 Low.png" alt="Jordan 2"></a>
+                        <a href="productos/producto 3.html"><img src="tenis Air Jordan 1.png" alt="Jordan 3"></a>
+                        <a href="productos/producto 4.html"><img src="Versace tenis odisea.png" alt="Versace" ></a>
+                        <a href="productos/producto 5.html"><img src="Air jordan 3 retroo.png" alt="Jordan 4"></a>
+                        
+                    </div>
+                    <div class="image city">
+                        <a href="productos/producto 6.html"><img src="tenis bajos Out Of Office 3.png" alt="Off White 1"></a>
+                        <a href="productos/producto 7.html"><img src="tenis Out Of Office.png" alt="Off White 2"></a>
+                        <a href="productos/producto 8.html"><img src="tenis Out Of Office 2.png" alt="Off White 3"></a>
+                        <a href="productos/producto 9.html"><img src="tenis Out Of Offic 4.png" alt="Off White 4"></a>
+                        <a href="productos/producto 10.html"><img src="Versace.png" alt="Versace"></a>               
+                    </div>
+                    <div class="image animals">
+                        <a href="productos/producto 11.html"><img src="Nike x Terror Squad.png" alt="Nike 1"></a>
+                        <a href="productos/producto 12.html"><img src="tenis Blazer Mid Sponge.png" alt="Nike 2"></a>
+                        <a href="productos/producto 13.html"><img src="tenis Unicorn Low.png" alt="Nike 4"></a>
+                        <a href="productos/producto 14.html"><img src="Travis Scott  Black Phantom.png" alt="Nike 3"></a>
+                        <a href="productos/producto 15.html"><img src="nike air force 1 high '07 SP.jpg" alt="Nike 5"></a>
+                        
+                    </div>
+                    
+                </div>
+            </section>
+        
+            <script>
+                document.addEventListener("DOMContentLoaded", function () {
+                    const filterButtons = document.querySelectorAll('.filter-btn');
+                    const imageContainer = document.querySelector('.image-container');
+        
+                    filterButtons.forEach(button => {
+                        button.addEventListener('click', filterImages);
+                    });
+        
+                    function filterImages(e) {
+                        const category = e.target.getAttribute('data-filter');
+                        const images = document.querySelectorAll('.image');
+        
+                        images.forEach(image => {
+                            image.style.display = 'none';
+        
+                            if (category === 'all' || image.classList.contains(category)) {
+                                image.style.display = 'block';
+                            }
+                        });
+                    }
+                });
+            </script>
+            <div class="section-2 px-1">
+                <img src="assets/img/hero-bg.png" alt="">
+
+                <div class="social">
+                    <a href="https://www.facebook.com/cristhian.palmatrujillo"><i class="bi bi-facebook"></i> <span>Facebook</span></a>
+                    <a href="https://www.instagram.com/cristh_palma/"><i class="bi bi-instagram"></i> <span>Instagram</span></a>
+                </div>
+        </div>
+    </section>    
+
+    <script src="assets/js/index.js"></script>
+</body>
+</html>
